@@ -83,6 +83,7 @@
 				3A51F2F11C58277000BBD614 /* Frameworks */,
 				3A51F2F21C58277000BBD614 /* Headers */,
 				3A51F2F31C58277000BBD614 /* Resources */,
+				3A51F3071C58295100BBD614 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -136,6 +137,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A51F3071C58295100BBD614 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mkdir -p \"~/Library/PreferencePanes/\"\ncp -Rf \"$BUILT_PRODUCTS_DIR/ProcessesPrefs.prefPane\" ~/Library/PreferencePanes/";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3A51F2F01C58277000BBD614 /* Sources */ = {
